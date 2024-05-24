@@ -1,9 +1,16 @@
-# cld-intro-nodejs
-Introduction to Cloudinary Using Node
+# cld-cropping-intro
+
+This microcourse dives into the diverse world of image cropping with Cloudinary. Learners will be introduced to the plethora of cropping methods available with Cloudinary, understanding their unique applications and limitations. 
+
+Explore the intricacies of aspect ratios and the importance of considering various viewports or device screen sizes for responsive design.
+
+Discover the concept of gravity in Cloudinary, and illustrate its role in determining the focal point of cropped images. Additionally, learners will gain insight into automatic cropping (c_auto), its benefits, and practical application.
+
+Through hands-on code examples, learners will discover how to apply automatic cropping (c_auto) and leverage automatic gravity detection (g_auto), or specify specific gravity locations like g_dog or g_face. By the end of the microcourse, participants will be equipped with the knowledge and skills to effectively crop images in diverse scenarios, optimizing them for different contexts and devices.
 
 ## Environment Setup
 
-### Install Node.js and NPM
+### Install Node.js and NPM:
 You will need to install Node.js on your machine, version 10 or higher.
  Important - Installing Node.js will also install npm, the package manager for Node.js.
 
@@ -17,66 +24,96 @@ brew install node
 #### Windows
 [Download for windows](https://nodejs.org/en/download/)
 
-#### Verify Node/NPM install
+#### Verify Node/NPM install:
 
-```bash
-# verify versions
+```console
 $ node --version
-v16.13.0
+v18.18.1
 
 $ npm --version
-8.1.0
+9.8.1
 ```
 
-### Choose an IDE or Use Text Editor
+### Choose an IDE or Use Text Editor:
 
-- [Visual Studio Code](https://code.visualstudio.com/download) 
+- [Visual Studio Code](https://code.visualstudio.com/download) - VSCode is our preferred IDE
 - [WebStorm](https://www.jetbrains.com/webstorm/) 
 - [Sublime](https://www.sublimetext.com/) 
 - [Atom](https://atom.io/) 
 - [iTerm](https://iterm2.com/) 
 
-### Download Repository
+### Download Repository:
 
-[Introduction to Cloudinary for API Users and Node.js Developers](https://github.com/cloudinary-training/cld-intro-nodejs)
+[Introduction to Cropping Essentials: Maximizing Efficiency with Cloudinary](https://github.com/cloudinary-training/cld-cropping-intro)
 
-- Node scripts for this module are located in the  `/optimization`, `access-control` directories
-- Assets are located in `/assets` directory
-- Run code from root directory 
+- Run code from root directory, like so:
+```bash
+node <file_name.js>
+```
 
-### Credentials
 
-1. Create a free account on Cloudinary at [https://www.cloudinary.com/signup]
+### Account Setup and Credentials:
 
-2. Navigate to the Dashboard. Copy the `CLOUDINARY_URL` into your clipboard.
+1. If you don't have one already, create a free Cloudinary account at: https://www.cloudinary.com/signup.
+
+2. Navigate to the Dashboard. Copy the `CLOUDINARY_URL` into your clipboard (see yellow arrow).
 
 ![Dashboard](./assets/environment_variable.png)
 
+3. Create a `.env` file in the root of the project. Paste the CLOUDINARY_URL environment variable into your `.env` file.
+
+There should be one line of code in your .env file, which should look like this:
+
+```console
+CLOUDINARY_URL=cloudinary://YOUR_API_KEY:YOUR_API_SECRET@YOUR_CLOUD_NAME
+```
 - Key: CLOUDINARY_URL
 - Value: cloudinary://API_KEY:API_SECRET@CLOUD_NAME
 
+Doing this step properly is essential, as it will let Cloudinary know who you are and provide access to your cloud.
 
-3. Create a `.env` file in the root of the project. Paste the CLOUDINARY_URL environment variable into your `.env` file.
+### Run Code: Install Node Libraries
 
-## Run Code: Test Credentials
 
-Make sure to npm install the Node.js libraries. You will be using the `cloudinary` and the `dotenv` libraries.
-
-```bash
+```console
 npm i
 ```
+(You will be using the `cloudinary` and the `dotenv` libraries.)
 
-```bash
+### Run Code: Test Credentials
+
+```console
 node testCredentials.js
 ```
-You should see your Cloud Name and API Key. PS- Keep your secret private!
+
+The output should look like this:
+```console
+your Cloud Name
+your API Key
+```
+
+- Your API_SECRET is part of your CLOUDINARY_URL
+- Remember to always keep your API_SECRET a secret!
+  - This is why we programmed testCredentials.js to only output your cloud name and API Key (no need to keep these two credentials private)
 
 
 ### Run Code:
-Example- run scripts from the root because all references to local assets are relative to the root.
 
 In order to upload all of the assets associated with these code examples and assign the correct Public ID to each, run this file:
 ```bash
 node upload.js
 ```
 
+Now you're ready to get started! 
+
+
+### Helpful Cloudinary Docs, Demos, and Tutorials:
+- [Resize and Crop Modes](https://cloudinary.com/documentation/resizing_and_cropping#resize_and_crop_modes)
+- [c_auto](https://cloudinary.com/documentation/transformation_reference#c_auto)
+- [Gravity Feature](https://cloudinary.com/documentation/transformation_reference#g_gravity)
+- [Gravity Positions for Crops](https://cloudinary.com/documentation/resizing_and_cropping#control_gravity)
+
+
+### Asset Credits:
+
+- xxx.jpg: [Photo by xxx from Pexels](https://www.pexels.com/photo/woman-in-collared-shirt-774909/)
