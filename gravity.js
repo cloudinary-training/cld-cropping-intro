@@ -39,7 +39,7 @@ console.log(cloudinary.url("laughing-woman", {transformation: {
     width: 300,
     crop: "thumb",
     radius: "max",
-    gravity: "face",
+    gravity: "auto",
     fetch_format: "png"
 }}));
 
