@@ -110,10 +110,10 @@ Now you're ready to get started!
 ### Helpful Cloudinary Docs, Demos, and Tutorials:
 - [Resize and Crop Modes](https://cloudinary.com/documentation/resizing_and_cropping#resize_and_crop_modes)
 - [c_auto](https://cloudinary.com/documentation/transformation_reference#c_auto)
+- [c_auto demo](https://cloudinary.com/demo/c_auto)
+- [Aspect Ratio](https://cloudinary.com/documentation/transformation_reference#ar_aspect_ratio)
+- [Image Resizing and Cropping](https://cloudinary.com/documentation/resizing_and_cropping#automatic_gravity_with_the_auto_cropping_mode)
+- [Face-detection Based Cropping](https://cloudinary.com/documentation/face_detection_based_transformations#face_detection_based_cropping)
+- [Cloudinary AI Content Analysis Add-On](https://cloudinary.com/documentation/cloudinary_ai_content_analysis_addon)
 - [Gravity Feature](https://cloudinary.com/documentation/transformation_reference#g_gravity)
 - [Gravity Positions for Crops](https://cloudinary.com/documentation/resizing_and_cropping#control_gravity)
-
-
-### Asset Credits:
-
-- xxx.jpg: [Photo by xxx from Pexels](https://www.pexels.com/photo/woman-in-collared-shirt-774909/)
