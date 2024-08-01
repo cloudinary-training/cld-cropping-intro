@@ -1,6 +1,6 @@
 # cld-cropping-intro
 
-This microcourse dives into the diverse world of image cropping with Cloudinary. Learners will be introduced to the plethora of cropping methods available with Cloudinary, understanding their unique applications and limitations. 
+This microcourse dives into the diverse world of automatic image cropping with Cloudinary. Learners will be introduced to the plethora of cropping methods available with Cloudinary, understanding their unique applications and limitations. 
 
 Explore the intricacies of aspect ratios and the importance of considering various viewports or device screen sizes for responsive design.
 
