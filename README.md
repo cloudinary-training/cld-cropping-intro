@@ -57,7 +57,7 @@ node <file_name.js>
 
 2. Navigate to your Product Environment Settings. Then click API Keys. Copy the `CLOUDINARY_URL` into your clipboard (see yellow arrow pointing to a clipboard).
 
-![Dashboard](./assets/credentials.png)
+![Dashboard](./assets/cld_credentials.png)
 
 3. Create a `.env` file in the root of the project. Paste the CLOUDINARY_URL environment variable into your `.env` file.
 
