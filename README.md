@@ -73,8 +73,6 @@ There should be one line of code in your .env file, which should look like this:
 ```console
 CLOUDINARY_URL=cloudinary://YOUR_API_KEY:YOUR_API_SECRET@YOUR_CLOUD_NAME
 ```
-- Key: CLOUDINARY_URL
-- Value: cloudinary://API_KEY:API_SECRET@CLOUD_NAME
 
 Doing this step properly is essential, as it will let Cloudinary know who you are and provide access to your cloud.
 
